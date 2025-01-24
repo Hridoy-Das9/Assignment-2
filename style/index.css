@@ -159,57 +159,107 @@ section {
     border: none;
     border-radius: 50%;
 }
-.story{
+
+.story {
     width: 1200px;
-    height: 630px;
     margin: 80px auto;
     background-image: url(../assets/bg.png);
-   
-}
-.story h2{
-    text-align: center;
-   margin-bottom: 80px ;
+
+
 }
 
-.story img{
+.story>h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.story img {
     width: 100%;
     height: 100%;
 }
-.row{
+
+.row {
     width: 100%;
     display: flex;
-    /* border: 2px solid rgb(196, 74, 74); */
     gap: 10px;
-   
-}
-.row1{
-    width: 510px;
-    height: 335px;
-    
-    
-}
-.row1-des{
-    width: 510px;
-    /* border: 2px solid rgb(36, 36, 36); */
 }
 
-.row2{
+.row1 img {
+    width: 510px;
+    height: 335px;
+    border-radius: 10px;
+
+}
+
+.row1-des {
+    width: 510px;
+    border-radius: 5px;
+    /* border: 2px solid rgb(36, 36, 36); */
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+
+h2>.img1 {
+    font-size: 24px;
+    margin: 0px;
+}
+
+p>.img1 {
+    margin: 0px;
+    width: 445px;
+    font-size: 14px;
+}
+.inner{
+    margin-top: -22px;
+    margin-left: 30px;
+}
+.inner>h2{
+    margin-bottom: 50px;
+}
+.inner>.primary{
+    background-color: rgba(60, 216, 232, 1);
+    font-size: 10px;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 20px;
+}
+.row2 {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
     /* border: 2px solid rgb(35, 163, 35); */
 }
-.row2 img{
+
+.row2 img {
     width: 290px;
     height: 187px;
+    border-radius: 10px;
 }
-.img2{
+
+.img2 {
     font-size: 14px;
     width: 190px;
 }
-.row2-des{
+
+.row2-des {
     /* border: 3px solid steelblue; */
     width: 290px;
+    box-shadow: 0px 12px 50px 0px rgba(114, 75, 75, 0.06);
+    border-radius: 10px;
+}
+.inner1{
+    margin-top: -22px;
+    margin-left:27px;
+}
+.inner1>.primary{
+    background-color: rgba(60, 216, 232, 1);
+    font-size: 10px;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 20px;
+    border: none;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width:576px) {
@@ -229,11 +279,13 @@ section {
     .menu-bar {
         display: flex;
     }
+
     hr {
         width: 100%;
         /* border-color: #666; */
         border-color: rgba(254, 163, 1, 1);
     }
+
     .empower {
         flex-direction: column-reverse;
         width: 100%;
@@ -255,11 +307,13 @@ section {
         margin-top: 10px;
         font-size: 16px;
     }
-    .curriculam{
+
+    .curriculam {
         width: 100%;
         /* border: 3px solid saddlebrown; */
     }
-    .box{
+
+    .box {
         flex-direction: column;
         width: calc(100% - 10px);
         /* border: 3px solid saddlebrown; */
