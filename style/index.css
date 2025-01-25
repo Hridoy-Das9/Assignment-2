@@ -63,10 +63,9 @@ section {
 
 /* main */
 .empower {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     width: 1200px;
-    margin: 0px auto;
-    /* background-color: bisque; */
+    margin: 50px auto;
     align-items: center;
     justify-content: space-between;
 }
@@ -174,13 +173,15 @@ section {
 
 .story {
     width: 1200px;
-    margin: 80px auto;
+    margin: 40px auto;
     background-image: url(../assets/bg.png);
 
 
 }
 
-.story>h2 {
+.our {
+    font-size:xx-large;
+    font-weight: bold;
     text-align: center;
     margin-bottom: 80px;
 }
@@ -282,19 +283,57 @@ p>.img1 {
 
 .primary3{
     background-color: rgb(0, 0, 0);
-    font-size: xx-small;
+    font-size: small;
     color: white;
-    padding: 3px 15px;
-    border-radius: 16px;
+    padding: 10px 23px;
+    border-radius: 8px;
     border: none;
-    margin: 50px 520px;
+    margin: 30px 520px;
     text-align: center;
 
 }
-
+.all{
+    width: 1000px;
+    height: 300px;
+    margin: 40px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 50px;
+    color: white;
+    margin-bottom: none;
+}
+.education{
+    display: flex;
+    align-items: center;
+}
+.education>h3{
+    width: 100px;
+}
+.edu>p{
+    width: 250px;
+    font-size: 12px;
+}
+.about1>p{
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 38px;
+}
+.about1>ul>li {
+    list-style: none;
+    
+}
+.items1>.items{
+    margin-bottom: 10px;
+}
+.touch>p{
+    font-size: 15px;
+    font-weight: bold;
+}
 @media screen and (max-width:576px) {
 
     .scl,
+    .arw,
     .part-2,
     .part-3 {
         display: none;
@@ -350,9 +389,9 @@ p>.img1 {
         /* border: 3px solid saddlebrown; */
     }
 
-    .arw {
+    /* .arw {
         width: 100%;
-    }
+    } */
 
     .story {
         width: 100%;
@@ -380,6 +419,29 @@ p>.img1 {
     }
     .primary3{
         margin: 50px 175px;
+    }
+    .all{
+        width: calc(100% - 100px);
+        height: 500px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        padding: 15px 12px;
+        text-align: left;
+        margin: 0px;
+        /* border: 2px solid steelblue; */
+    }
+    .edu>p{
+        width: 100%;
+        font-size: 13px;
+    }
+    .about1>p{
+        font-size: 15px;
+        font-weight: bold;
+        margin-left:0px;
+    }
+    .about1>ul>li {
+        list-style: none;
+        padding-left: 0px;
     }
 }
 
